@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "li_scale",
+  "version": "${version}",
+  "name": "LiScale",
+  "description": "",
+  "authors": ["NaHCO3","Ender_Elaina"],
+  "contact": {
+
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/li_scale/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "cn.little1yuan.li_scale.client.LiScaleClient"
+    ],
+    "main": [
+      "cn.little1yuan.li_scale.LiScale"
+    ]
+  },
+  "mixins": [
+    "li_scale.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
